@@ -18,6 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="edge.cpp" />
+    <ClCompile Include="graph_base.cpp" />
+    <ClCompile Include="graph_program.cpp" />
+    <ClCompile Include="input_panel.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mes_box.cpp" />
+    <ClCompile Include="node.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="edge.hpp" />
+    <ClInclude Include="graph_base.h" />
+    <ClInclude Include="graph_program.hpp" />
+    <ClInclude Include="input_panel.hpp" />
+    <ClInclude Include="menu.hpp" />
+    <ClInclude Include="mes_box.hpp" />
+    <ClInclude Include="node.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{A671AE74-29FD-49F8-9ADA-775390BC578A}</ProjectGuid>
@@ -88,15 +107,16 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\Admin\source\repos\graph_creator\graph_creator\graph_creator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\Admin\source\repos\graph_creator\graph_creator\graph_creator\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics-d.lib; sfml-window-d.lib; sfml-system-d.lib; sfml-audio-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -149,20 +169,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="graph_base.cpp" />
-    <ClCompile Include="graph_creator.cpp" />
-    <ClCompile Include="graph_program.cpp" />
-    <ClCompile Include="input_panel.cpp" />
-    <ClCompile Include="node_and_edge.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="graph_base.h" />
-    <ClInclude Include="graph_program.h" />
-    <ClInclude Include="input_panel.h" />
-    <ClInclude Include="mes_box.h" />
-    <ClInclude Include="node_and_edge.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

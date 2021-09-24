@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GRAPH_BASE_H_INCLUDED
+#define GRAPH_BASE_H_INCLUDED
 
 #include <cstddef>
 #include <vector>
@@ -78,5 +79,7 @@ public:
     bool Is_Info() const;;
     void Set_Info(bool st);
 
-    char const* get_name() const;
+    char const * get_name() const;
 };
+
+#endif // GRAPH_BASE_H_INCLUDED

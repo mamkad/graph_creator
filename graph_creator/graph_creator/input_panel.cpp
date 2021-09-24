@@ -1,13 +1,6 @@
-#include "input_panel.h"
+#include "input_panel.hpp"
 
 #include <iostream>
-
-#define DELETE_KEY 8
-#define ENTER_KEY 	13
-#define ESCAPE_KEY 27
-#define CODE_SYMBOL 128
-#define BAR_SIZE     30
-
 text_input::text_input( sf::Font & font, sf::RenderWindow * main_win )
     : main_win_(main_win)
 {
@@ -45,7 +38,6 @@ void text_input::clslch()
 void text_input::update(char ch)
 {
     std::cout << "sdsd" << std::endl;
-
      if (!is_select_  || ch > CODE_SYMBOL)
         return;
 

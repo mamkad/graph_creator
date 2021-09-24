@@ -1,5 +1,6 @@
 #include "graph_base.h"
 
+
 graph_base::graph_base()
     {
         state_ = {0, 0, 0, 0, 0, 1, 0, 0};

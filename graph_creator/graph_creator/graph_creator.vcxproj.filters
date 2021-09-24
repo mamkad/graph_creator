@@ -15,36 +15,51 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="graph_creator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="graph_program.cpp">
+    <ClCompile Include="edge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="graph_base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="graph_program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="input_panel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="node_and_edge.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mes_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="graph_program.h">
+    <ClInclude Include="edge.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="graph_base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="input_panel.h">
+    <ClInclude Include="graph_program.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mes_box.h">
+    <ClInclude Include="input_panel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="node_and_edge.h">
+    <ClInclude Include="menu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mes_box.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="node.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
